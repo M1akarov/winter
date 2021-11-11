@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #efefef;
+  text-transform: uppercase;
+  font-family: 'Oswald',sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: #222;
+  position: relative;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    .logo {
+      text-decoration: none;
+      color: white;
+    }
+
+    .burger {
+      display: flex;
+      flex-direction: column;
+      height: 20px;
+      justify-content: space-between;
+
+      &__item {
+        width: 30px;
+        height: 2px;
+        background: white;
+      }
+    }
+  }
+
+  .header__item {
+    .header__text {
+      text-align-last: left;
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: 400;
+      width: 475px;
+      margin-top: 50px;
+    }
+
+    .header__image {
+      max-width: 700px;
+      height: auto;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+    }
+
+    button {
+      width: 250px;
+      height: 50px;
+      background: none;
+      border: 1px solid white;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .star  {
+    position: absolute;
+    width: 50px;
+    height: auto;
+  }
+
+  .star1{
+    top: 50px;
+    left: 100px;
+  }
+  .star2{
+    bottom: 75px;
+    left: 500px;
+  }
+  .star3{
+    top: 70px;
+    right: 180px;
+  }
+  .star4{
+    bottom: 20px;
+    left: 400px;
+  }
+  .star5{
+    right: 650px;
+    top: 150px;
+  }
+  .star6{
+    bottom: 20px;
+    left: 150px;
+  }
+  .star7{
+    top: 70px;
+    right: 180px;
+  }
+
+  .header__line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    left: 20px;
+    background: #efefef;
+    z-index: -1;
+  }
+}
